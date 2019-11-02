@@ -151,7 +151,7 @@
                     android:id="@+id/imagefolder2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    app:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -174,7 +174,7 @@
                     android:id="@+id/imagefolder1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    app:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -196,7 +196,7 @@
                     android:id="@+id/imagefolder3"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    app:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -218,7 +218,7 @@
                     android:id="@+id/imagefolder4"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    app:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
