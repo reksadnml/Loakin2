@@ -17,13 +17,30 @@ public class MainActivity extends AppCompatActivity {
         this.getSupportActionBar().hide();
 
         Button buttonMasuk = findViewById(R.id.buttonMasuk);
+        Button daftarDriver = findViewById(R.id.button4);
+        Button daftarPengguna = findViewById(R.id.button3);
 
         buttonMasuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, bottomNav.class);
                 startActivity(i);
-                finish();
+            }
+        });
+
+        daftarDriver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, DaftarDriver.class);
+                startActivity(i);
+            }
+        });
+
+        daftarPengguna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, DaftarPengguna.class);
+                startActivity(i);
             }
         });
     }

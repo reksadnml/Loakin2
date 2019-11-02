@@ -12,6 +12,8 @@
         <activity
             android:name=".bottomNav"
             android:label="@string/title_activity_bottom_nav"></activity>
+        <activity android:name=".DaftarDriver" />
+        <activity android:name=".DaftarPengguna" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
