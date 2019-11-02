@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tool="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,18 +16,20 @@
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-             />
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="-50dp">
+            android:orientation="horizontal"
+            android:layout_marginTop="-60dp">
+
             <TextView
-                android:id="@+id/login"
+                android:id="@+id/editProfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
                 android:text="Profil"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
                 android:textColor="#037452"
                 android:textSize="24sp"
                 android:layout_marginBottom="10dp"/>
@@ -37,7 +38,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="2dp"
             android:weightSum="10"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp">
@@ -55,31 +55,32 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="28dp"
             android:layout_marginLeft="13dp"
-            android:layout_marginRight="60dp">
+            android:layout_marginRight="60dp"  >
+
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_margin="5dp"
                 android:layout_marginTop="20dp"
-                app:srcCompat="@mipmap/ic_profilpct" />
+                app:srcCompat="@drawable/ic_man"/>
+
             <TextView
                 android:id="@+id/kotakNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:padding="15dp"
                 android:textSize="30sp"
-                android:hint="Adudu"
-                android:textColor="#75000000" />
+                android:text="Adudu"
+                android:textColor="#DA000000" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="15dp"
             android:weightSum="10"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp">
@@ -91,66 +92,32 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="0dp"
                 android:background="#D3CDCD" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/editProfil"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="15dp"
-                android:layout_marginLeft="10dp"
-                android:textSize="19sp"
-                android:hint="Edit Profil"
-                android:textColor="#75000000" />
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="7dp"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/ic_rightArrow"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:weightSum="10"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp">
-            <View
-                android:layout_width="match_parent"
-                android:layout_weight="4"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="#D3CDCD" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal">
             <TextView
-                android:id="@+id/gantiProfil"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="15dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="19sp"
-                android:hint="Ganti Profil"
-                android:textColor="#75000000" />
+                android:text="Edit Profil"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"></TextView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="10dp"></ImageView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="15dp"
             android:weightSum="10"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp">
@@ -162,54 +129,98 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="0dp"
                 android:background="#D3CDCD" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/beriFeedback"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="15dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="19sp"
-                android:hint="Beri Feedback"
-                android:textColor="#75000000" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:weightSum="10"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp">
-            <View
-                android:layout_width="match_parent"
-                android:layout_weight="4"
-                android:layout_height="2dp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="#D3CDCD" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:id="@+id/keluar"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:padding="15dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="19sp"
-                android:hint="Keluar"
-                android:textColor="#DA5151" />
+                android:text="Ganti Password"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"></TextView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="10dp"></ImageView>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:weightSum="10"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#D3CDCD" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Beri Feedback"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"></TextView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="10dp"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:weightSum="10"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#D3CDCD" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:textColor="#C22828"></TextView>
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
-
 </LinearLayout>
