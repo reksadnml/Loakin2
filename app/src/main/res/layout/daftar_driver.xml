@@ -234,7 +234,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="60dp"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:text="Saya telah menyetujui persyaratan dan ketentuan dari aplikasi ini"
                 android:textColor="#4F4040"/>
             <Button
@@ -243,7 +243,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="60dp"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/kotaksimpan"
                 android:text="Daftar"
                 android:textColor="#fff" />

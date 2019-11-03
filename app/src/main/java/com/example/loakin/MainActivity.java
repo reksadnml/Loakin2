@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, bottomNav.class);
                 startActivity(i);
-                finish();
+
             }
         });
     }
