@@ -12,11 +12,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.order);
 
         this.getSupportActionBar().hide();
 
-        Button buttonMasuk = findViewById(R.id.buttonMasuk);
+       /* Button buttonMasuk = findViewById(R.id.buttonMasuk);
 
         buttonMasuk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
 
             }
-        });
+        }); */
     }
 }
