@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "936286647708",
+    "firebase_url": "https://loakin.firebaseio.com",
+    "project_id": "loakin",
+    "storage_bucket": "loakin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936286647708:android:77a83e18e9aafeef508459",
+        "android_client_info": {
+          "package_name": "com.example.loakin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936286647708-8pb61q9iamp45fj09bghbfik2jc5q5n0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loakin",
+            "certificate_hash": "807c3cacdec751865705cb6bad04addbc852daa4"
+          }
+        },
+        {
+          "client_id": "936286647708-c0iru5hus4tbk6aobg5pque0jpvn2qor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYIgt6D1zV-OMfSkgHpOxQobobnWw-DhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936286647708-c0iru5hus4tbk6aobg5pque0jpvn2qor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

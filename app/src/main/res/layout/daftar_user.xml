@@ -48,7 +48,7 @@
                     android:layout_marginRight="60dp">
 
                     <EditText
-                        android:id="@+id/kotakNama"
+                        android:id="@+id/daftar_nama"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -70,7 +70,7 @@
                     android:layout_marginRight="60dp">
 
                     <EditText
-                        android:id="@+id/kotakemail"
+                        android:id="@+id/daftar_email"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
@@ -89,7 +89,7 @@
                     android:layout_marginRight="60dp">
 
                     <EditText
-                        android:id="@+id/kotakalamat"
+                        android:id="@+id/daftar_alamat"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:inputType="text"
@@ -108,7 +108,7 @@
                     android:layout_marginRight="60dp">
 
                     <EditText
-                        android:id="@+id/kotaktelp"
+                        android:id="@+id/daftar_telpon"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:hint="Nomor Telepon"
@@ -127,7 +127,7 @@
                     android:layout_marginRight="60dp">
 
                     <EditText
-                        android:id="@+id/kotakpass2"
+                        android:id="@+id/daftar_password"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
@@ -146,7 +146,7 @@
                     android:text="Saya telah menyetujui persyaratan dan ketentuan dari aplikasi ini"
                     android:textColor="#4F4040"/>
                 <Button
-                    android:id="@+id/buttonMasuk"
+                    android:id="@+id/button_daftar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="60dp"

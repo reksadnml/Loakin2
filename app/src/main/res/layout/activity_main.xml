@@ -59,7 +59,7 @@
                         app:srcCompat="@drawable/ic_person_outline" />
 
                     <EditText
-                        android:id="@+id/kotakNama"
+                        android:id="@+id/input_email"
                         android:layout_width="141dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -89,7 +89,7 @@
                         app:srcCompat="@drawable/ic_lock" />
 
                     <EditText
-                        android:id="@+id/kotakpass"
+                        android:id="@+id/input_password"
                         android:layout_width="141dp"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
