@@ -54,7 +54,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="5dp"
                         android:layout_marginTop="5dp"
-                        app:srcCompat="@mipmap/ic_person" />
+                        app:srcCompat="@drawable/ic_person_outline" />
 
                     <EditText
                         android:id="@+id/kotakNama"
@@ -84,7 +84,7 @@
                         android:layout_height="30dp"
                         android:layout_margin="5dp"
                         android:layout_marginTop="5dp"
-                        app:srcCompat="@mipmap/ic_pass" />
+                        app:srcCompat="@drawable/ic_lock" />
 
                     <EditText
                         android:id="@+id/kotakpass"
@@ -95,6 +95,17 @@
                         android:hint="Password"
                         android:textColor="#75000000" />
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonMasuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/kotaksimpan"
+                    android:text="Masuk"
+                    android:textColor="#fff" />
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="match_parent"
@@ -105,18 +116,43 @@
                     android:background="@drawable/kotaklupapass"
                     android:text="Lupa Password?"
                     android:textColor="#87160909" />
-                <Button
-                    android:id="@+id/buttonMasuk"
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="60dp"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/kotaksimpan"
-                    android:text="Masuk"
-                    android:textColor="#fff" />
-            </LinearLayout>
+                    android:orientation="horizontal"
+                    android:layout_marginTop="65dp"
+                    android:weightSum="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#D3CDCD" />
 
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Atau"
+                        android:layout_marginLeft="-15dp"
+                        android:textColor="#757070"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#D3CDCD" />
 
             <LinearLayout
                 android:layout_width="match_parent"
