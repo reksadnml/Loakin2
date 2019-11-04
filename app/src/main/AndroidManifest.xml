@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".OrderMasuk"></activity>
+        <activity android:name=".CariDriver" />
+        <activity
+            android:name=".ui.recyclerViewPesanMasuk.PesanMasuk"
+            android:theme="@style/LightAppBar" />
+        <activity android:name=".Feedback" />
         <activity
             android:name=".bottomNav"
-            android:label="@string/title_activity_bottom_nav"></activity>
+            android:label="@string/title_activity_bottom_nav" />
         <activity android:name=".DaftarDriver" />
         <activity android:name=".DaftarPengguna" />
         <activity android:name=".MainActivity">

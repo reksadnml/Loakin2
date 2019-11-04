@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:id="@+id/gambar_pesan_masuk"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/ic_man"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/gambar_pesan_masuk"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/deskripsi_pesan_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keterangan pesan"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/waktu_pesan_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu pesan"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

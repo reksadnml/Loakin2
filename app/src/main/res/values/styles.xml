@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LightAppBar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">#aaaaaa</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 </resources>

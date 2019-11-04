@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.loakin.ui.recyclerViewPesanMasuk.PesanMasuk;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         daftarDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, DaftarDriver.class);
+                Intent i = new Intent(MainActivity.this, PesanMasuk.class);
                 startActivity(i);
             }
         });
