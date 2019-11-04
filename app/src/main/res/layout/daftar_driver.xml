@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,7 +36,7 @@
             <View
                 android:id="@+id/rectangle"
                 android:layout_width="match_parent"
-                android:layout_height="530dp"
+                android:layout_height="540dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/background_kotak"></View>
@@ -100,7 +101,7 @@
                     android:textColor="#75000000" />
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/pass"
+                android:id="@+id/telp"
                 android:layout_width="match_parent"
                 android:layout_height="37.65dp"
                 android:background="@drawable/kotak_nama"
@@ -110,12 +111,12 @@
                 android:layout_marginRight="60dp">
 
                 <EditText
-                    android:id="@+id/kotakpass"
+                    android:id="@+id/kotaktelp"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
+                    android:hint="Nomor Telepon"
+                    android:inputType="number"
                     android:padding="10dp"
-                    android:hint="Password"
                     android:textColor="#75000000" />
             </LinearLayout>
             <LinearLayout
@@ -134,22 +135,23 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:padding="10dp"
-                    android:hint="Masukkan Ulang Password"
+                    android:hint="Password"
                     android:textColor="#75000000" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/scanktp"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp">
 
                 <ImageView
-                    android:id="@+id/imagefolder"
+                    android:id="@+id/imagefolder2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    tools:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -159,10 +161,11 @@
                 </TextView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/scansim"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp">
@@ -171,7 +174,7 @@
                     android:id="@+id/imagefolder1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    tools:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -184,7 +187,7 @@
             <LinearLayout
                 android:id="@+id/scankk"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp">
@@ -193,7 +196,7 @@
                     android:id="@+id/imagefolder3"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    tools:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -206,7 +209,7 @@
             <LinearLayout
                 android:id="@+id/scanfoto"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp">
@@ -215,7 +218,7 @@
                     android:id="@+id/imagefolder4"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    tools:srcCompat="@mipmap/ic_folder"></ImageView>
+                    app:srcCompat="@drawable/ic_folder"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
