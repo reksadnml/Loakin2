@@ -1,4 +1,4 @@
-package com.example.loakin.ui.dashboard;
+package com.example.loakin.ui.beranda;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

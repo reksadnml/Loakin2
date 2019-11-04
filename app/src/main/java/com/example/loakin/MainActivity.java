@@ -7,18 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.loakin.ui.recyclerViewPesanMasuk.PesanMasuk;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.order);
+        setContentView(R.layout.activity_main);
 
-        this.getSupportActionBar().hide();
+//        this.getSupportActionBar().hide();
 
-        Button buttonMasuk = findViewById(R.id.buttonMasuk);
+        Button buttonMasuk = findViewById(R.id.button_masuk);
         Button daftarDriver = findViewById(R.id.button4);
         Button daftarPengguna = findViewById(R.id.button3);
 
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         daftarDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, PesanMasuk.class);
+                Intent i = new Intent(MainActivity.this, DaftarDriver.class);
                 startActivity(i);
             }
         });

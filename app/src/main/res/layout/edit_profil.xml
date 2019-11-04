@@ -10,35 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <View
-            android:id="@+id/rectangle_4"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="-60dp">
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="7dp"
-                android:layout_marginTop="40dp"
-                app:srcCompat="@drawable/ic_left"/>
-            <TextView
-                android:id="@+id/editProfil"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Profil"
-                android:layout_marginTop="15dp"
-                android:textColor="#037452"
-                android:textSize="24sp"
-                android:layout_marginBottom="10dp"/>
-        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

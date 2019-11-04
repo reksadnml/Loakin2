@@ -1,4 +1,4 @@
-package com.example.loakin.ui.recyclerViewPesanMasuk;
+package com.example.loakin.ui.pesanMasuk;
 
 import android.content.Context;
 import android.view.LayoutInflater;

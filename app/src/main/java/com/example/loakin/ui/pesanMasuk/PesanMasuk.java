@@ -1,4 +1,4 @@
-package com.example.loakin.ui.recyclerViewPesanMasuk;
+package com.example.loakin.ui.pesanMasuk;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;

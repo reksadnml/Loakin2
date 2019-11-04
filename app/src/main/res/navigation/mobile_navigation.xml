@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_beranda">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.loakin.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_beranda"
+        android:name="com.example.loakin.ui.riwayat.HomeFragment"
+        android:label="Beranda"
+        tools:layout="@layout/home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.loakin.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_riwayat"
+        android:name="com.example.loakin.ui.beranda.DashboardFragment"
+        android:label="Riwayat"
+        tools:layout="@layout/activity_history" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.loakin.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_pesan"
+        android:name="com.example.loakin.ui.pesanMasuk.NotificationsFragment"
+        android:label="Pesan Masuk"
+        tools:layout="@layout/activity_pesan_masuk" />
+
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="com.example.loakin.ui.profil.ProfilFragment"
+        android:label="Profil"
+        tools:layout="@layout/profil" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.loakin.ui.recyclerViewPesanMasuk;
+package com.example.loakin.ui.pesanMasuk;
 
 import com.example.loakin.R;
 

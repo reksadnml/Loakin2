@@ -13,7 +13,7 @@
         <activity android:name=".OrderMasuk" />
         <activity android:name=".CariDriver" />
         <activity
-            android:name=".ui.recyclerViewPesanMasuk.PesanMasuk"
+            android:name=".ui.pesanMasuk.PesanMasuk"
             android:theme="@style/LightAppBar" />
         <activity android:name=".Feedback" />
         <activity
@@ -21,6 +21,7 @@
             android:label="@string/title_activity_bottom_nav" />
         <activity android:name=".DaftarDriver" />
         <activity android:name=".DaftarPengguna" />
+        <activity android:name=".EditProfil" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
