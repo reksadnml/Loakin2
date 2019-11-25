@@ -14,17 +14,24 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreSettings;
 
 public class DaftarPengguna extends AppCompatActivity {
 
     private EditText etEmail, etPassword, etAlamat, etNama, etTelpon;
     private Button btnDaftar;
     FirebaseAuth mFirebaseAuth;
+    private FirebaseFirestore mDb;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.daftar_user);
         getSupportActionBar().setTitle("Daftar Pengguna");
+
+        // inisiasi databse firestore
+        mDb = FirebaseFirestore.getInstance();
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         etNama = findViewById(R.id.daftar_nama);
@@ -37,11 +44,11 @@ public class DaftarPengguna extends AppCompatActivity {
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String sNama = etNama.getText().toString();
-                String sEmail = etEmail.getText().toString();
+                final String sNama = etNama.getText().toString();
+                final String sEmail = etEmail.getText().toString();
                 String sPassword = etPassword.getText().toString();
-                String sAlamat = etAlamat.getText().toString();
-                String sTelpon = etTelpon.getText().toString();
+                final String sAlamat = etAlamat.getText().toString();
+                final String sTelpon = etTelpon.getText().toString();
 
                 if(sNama.isEmpty()) {
                     etNama.setError("Please enter your name");
@@ -68,6 +75,8 @@ public class DaftarPengguna extends AppCompatActivity {
                                     if (!task.isSuccessful()) {
                                         Toast.makeText(DaftarPengguna.this, "Tidak berhasil mendaftar", Toast.LENGTH_SHORT).show();
                                     } else {
+                                        String uid = FirebaseAuth.getInstance().getUid();
+                                        insertDataToFirestore(sNama, sEmail, sAlamat, sTelpon, uid);
                                         startActivity(new Intent(DaftarPengguna.this, bottomNav.class));
                                     }
                                 }
@@ -77,7 +86,26 @@ public class DaftarPengguna extends AppCompatActivity {
                 }
             }
         });
+    }
 
+    private void insertDataToFirestore(String sNama, String sEmail, String sAlamat, String sTelpon, String uid) {
+        // insert user to firestore
+        Pengguna pengguna = new Pengguna();
+        pengguna.setNama(sNama);
+        pengguna.setEmail(sEmail);
+        pengguna.setAlamat(sAlamat);
+        pengguna.setNomorTelepon(sTelpon);
+        pengguna.setUserId(uid);
 
+        FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
+                .setTimestampsInSnapshotsEnabled(true)
+                .build();
+        mDb.setFirestoreSettings(settings);
+
+        DocumentReference newUserRef = mDb
+                .collection("Users")
+                .document(uid);
+
+        newUserRef.set(pengguna);
     }
 }
