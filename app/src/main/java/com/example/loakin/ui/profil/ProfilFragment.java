@@ -14,17 +14,23 @@ import androidx.fragment.app.Fragment;
 
 import com.example.loakin.EditProfil;
 import com.example.loakin.MainActivity;
+import com.example.loakin.Pengguna;
 import com.example.loakin.R;
 import com.example.loakin.bottomNav;
 import com.example.loakin.ui.beranda.DashboardViewModel;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class ProfilFragment extends Fragment {
     private ProfilViewModel profilViewModel;
     private LinearLayout buttonEdit, buttonLogout;
     private TextView namaAkun;
     FirebaseAuth  mFirebaseAuth;
+    FirebaseFirestore mDb;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -56,16 +62,15 @@ public class ProfilFragment extends Fragment {
             }
         });
 
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        namaAkun.setText(user.getEmail());
-
-//        final TextView textView = root.findViewById(R.id.text_dashboard);
-//        dashboardViewModel.getText().observe(this, new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
+        mDb = FirebaseFirestore.getInstance();
+        DocumentReference docRef = mDb.collection("Users").document(FirebaseAuth.getInstance().getUid());
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                Pengguna pengguna = documentSnapshot.toObject(Pengguna.class);
+                namaAkun.setText(pengguna.nama);
+            }
+        });
         return root;
     }
 }

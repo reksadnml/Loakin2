@@ -45,7 +45,7 @@
                 app:srcCompat="@drawable/ic_man"/>
 
             <TextView
-                android:id="@+id/kotakNama"
+                android:id="@+id/title_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -66,6 +66,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"></TextView>
             <EditText
+                android:id="@+id/edit_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Masukkan Nama Baru"
@@ -86,6 +87,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"></TextView>
             <EditText
+                android:id="@+id/edit_telepon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Masukkan Nomor Telepon"
@@ -100,21 +102,22 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Email"
+                android:text="Alamat"
                 android:textColor="#757070"
                 android:textSize="24sp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"></TextView>
             <EditText
+                android:id="@+id/edit_alamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Masukkan Email"
+                android:hint="Masukkan Alamat"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="12dp"
                 android:inputType="textEmailAddress"></EditText>
         </LinearLayout>
         <Button
-            android:id="@+id/buttonMasuk"
+            android:id="@+id/button_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="60dp"

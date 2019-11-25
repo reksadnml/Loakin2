@@ -23,7 +23,7 @@ public class DaftarPengguna extends AppCompatActivity {
     private EditText etEmail, etPassword, etAlamat, etNama, etTelpon;
     private Button btnDaftar;
     FirebaseAuth mFirebaseAuth;
-    private FirebaseFirestore mDb;
+    public FirebaseFirestore mDb;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,7 +88,7 @@ public class DaftarPengguna extends AppCompatActivity {
         });
     }
 
-    private void insertDataToFirestore(String sNama, String sEmail, String sAlamat, String sTelpon, String uid) {
+    public void insertDataToFirestore(String sNama, String sEmail, String sAlamat, String sTelpon, String uid) {
         // insert user to firestore
         Pengguna pengguna = new Pengguna();
         pengguna.setNama(sNama);
