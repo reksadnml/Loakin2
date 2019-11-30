@@ -1,31 +1,35 @@
 package com.example.loakin.ui.riwayat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.loakin.CariDriver;
 import com.example.loakin.R;
 
 public class HomeFragment extends Fragment {
 
-//    private HomeViewModel homeViewModel;
-
+    private ImageView antarBarang;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-//        homeViewModel =
-//                ViewModelProviders.of(this).get(HomeViewModel.class);
+
         View root = inflater.inflate(R.layout.home, container, false);
-//        final TextView textView = root.findViewById(R.id.text_home);
-//        homeViewModel.getText().observe(this, new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
+        antarBarang = root.findViewById(R.id.antar_barang);
+
+        antarBarang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), CariDriver.class);
+                startActivity(i);
+            }
+        });
+
         return root;
     }
 }
