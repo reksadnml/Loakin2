@@ -64,7 +64,7 @@
             app:srcCompat="@drawable/ic_bri"/>
 
             <TextView
-                android:id="@+id/editProfil"
+                android:fontFamily="@font/roboto"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -111,7 +111,7 @@
                 app:srcCompat="@drawable/ic_bni"/>
 
             <TextView
-                android:id="@+id/editProfil1"
+                android:fontFamily="@font/roboto"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -159,7 +159,7 @@
                 app:srcCompat="@drawable/ic_bank_mandiri_01"/>
 
             <TextView
-                android:id="@+id/editProfil2"
+                android:fontFamily="@font/roboto"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -199,7 +199,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/editProfil3"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -210,7 +210,7 @@
                 android:text="1. Masukkan kartu dan pin Anda"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil4"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -220,7 +220,7 @@
                 android:text="2. Pilih Bayar/Beli"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil5"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -230,7 +230,7 @@
                 android:text="3. Pilih Lainnya"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil6"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -240,7 +240,7 @@
                 android:text="4. Pilih Lainnya"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil7"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -250,7 +250,7 @@
                 android:text="5. Pilih E-Commerce"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil8"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -260,7 +260,7 @@
                 android:text="6. Masukkan Kode Perusahaan 123456"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil9"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -270,7 +270,7 @@
                 android:text="7. Masukkan Nomor Telepon"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil10"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -280,7 +280,7 @@
                 android:text="8. Masukkan Nilai Top-Up"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil11"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -290,7 +290,7 @@
                 android:text="9. Pilih 1"
                 android:textColor="#C7000000" />
             <TextView
-                android:id="@+id/editProfil12"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -330,7 +330,7 @@
                 app:srcCompat="@drawable/ic_bca"/>
 
             <TextView
-                android:id="@+id/editProfil13"
+                android:fontFamily="@font/roboto"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:ems="10"

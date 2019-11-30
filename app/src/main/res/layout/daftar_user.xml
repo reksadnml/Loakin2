@@ -28,6 +28,7 @@
                     android:textAlignment="center"
                     android:text="DAFTAR"
                     android:textColor="#ffffff"
+                    android:fontFamily="@font/roboto_light"
                     android:textSize="40sp"
                     android:layout_marginBottom="30dp"/>
                 <View
@@ -49,10 +50,11 @@
 
                     <EditText
                         android:id="@+id/daftar_nama"
-                        android:layout_width="250dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="text"
+                        android:fontFamily="@font/roboto"
                         android:padding="10dp"
                         android:hint="Nama Lengkap"
                         android:textColor="#75000000" />
@@ -71,9 +73,10 @@
 
                     <EditText
                         android:id="@+id/daftar_email"
-                        android:layout_width="250dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
+                        android:fontFamily="@font/roboto"
                         android:padding="10dp"
                         android:hint="Email"
                         android:textColor="#75000000" />
@@ -90,11 +93,12 @@
 
                     <EditText
                         android:id="@+id/daftar_alamat"
-                        android:layout_width="250dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         android:padding="10dp"
                         android:hint="Alamat"
+                        android:fontFamily="@font/roboto"
                         android:textColor="#75000000" />
                 </LinearLayout>
                 <LinearLayout
@@ -109,9 +113,10 @@
 
                     <EditText
                         android:id="@+id/daftar_telpon"
-                        android:layout_width="250dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:hint="Nomor Telepon"
+                        android:fontFamily="@font/roboto"
                         android:inputType="number"
                         android:padding="10dp"
                         android:textColor="#75000000" />
@@ -128,9 +133,10 @@
 
                     <EditText
                         android:id="@+id/daftar_password"
-                        android:layout_width="250dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
+                        android:fontFamily="@font/roboto"
                         android:padding="10dp"
                         android:hint="Password"
                         android:textColor="#75000000" />
@@ -140,11 +146,13 @@
                     android:id="@+id/checkBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="60dp"
                     android:layout_marginLeft="60dp"
                     android:layout_marginTop="15dp"
+                    android:layout_marginRight="60dp"
+                    android:fontFamily="@font/roboto"
                     android:text="Saya telah menyetujui persyaratan dan ketentuan dari aplikasi ini"
-                    android:textColor="#4F4040"/>
+                    android:textAlignment="viewStart"
+                    android:textColor="#4F4040" />
                 <Button
                     android:id="@+id/button_daftar"
                     android:layout_width="match_parent"
@@ -153,6 +161,7 @@
                     android:layout_marginLeft="60dp"
                     android:layout_marginTop="13dp"
                     android:background="@drawable/kotaksimpan"
+                    android:fontFamily="@font/roboto_bold"
                     android:text="Daftar"
                     android:textColor="#fff" />
 
