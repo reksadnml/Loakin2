@@ -50,6 +50,7 @@
         <activity android:name=".DaftarDriver" />
         <activity android:name=".DaftarPengguna" />
         <activity android:name=".EditProfil" />
+        <activity android:name=".OrderActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
