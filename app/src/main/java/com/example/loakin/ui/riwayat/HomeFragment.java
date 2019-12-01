@@ -29,15 +29,6 @@ public class HomeFragment extends Fragment {
                 startActivity(i);
             }
         });
-        antarBarang = root.findViewById(R.id.antar_barang);
-
-        antarBarang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getActivity(), CariDriver.class);
-                startActivity(i);
-            }
-        });
 
         return root;
     }
