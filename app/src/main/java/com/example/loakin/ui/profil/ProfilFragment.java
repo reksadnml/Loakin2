@@ -9,18 +9,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.loakin.EditProfil;
 import com.example.loakin.MainActivity;
-import com.example.loakin.Pengguna;
+import com.example.loakin.model.Pengguna;
 import com.example.loakin.R;
-import com.example.loakin.bottomNav;
-import com.example.loakin.ui.beranda.DashboardViewModel;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
