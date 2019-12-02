@@ -1,19 +1,427 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/rectangle_4"
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="@drawable/bg_ijo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/background_kotak">
+
+                    <TextView
+                        android:id="@+id/dompet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/biorhyme_bold"
+                        android:text="E-Wallet"
+                        android:textColor="#332D2D"
+                        android:textSize="26sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        app:layout_constraintRight_toLeftOf="@id/tvSaldo"
+                        app:layout_constraintTop_toTopOf="@id/tvSaldo"
+                        app:srcCompat="@drawable/ic_chevron_right" />
+
+                    <TextView
+                        android:id="@+id/tvSaldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/biorhyme_light"
+                        android:text="Rp. 12.000"
+                        android:textColor="#332D2D"
+                        android:textSize="18sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dompet"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/divider">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/bayar"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                app:srcCompat="@drawable/ic_bayar" />
+
+                            <TextView
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="center"
+                                android:text="Bayar" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/nabung"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                app:srcCompat="@drawable/ic_piggy_bank" />
+
+                            <TextView
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="center"
+                                android:text="Isi Ulang" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#D3CDCD"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dompet" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/amiri"
+                    android:text="Menu"
+                    android:textColor="#332D2D"
+                    android:textSize="30sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/antar_barang"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="40dp"
+                        android:background="@drawable/ellipse"
+                        app:srcCompat="@drawable/ic_antar_barang" />
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:fontFamily="@font/amiri"
+                        android:gravity="center"
+                        android:text="Antar Barang" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="4"
+                        android:background="#D3CDCD" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/amiri"
+                    android:text="Your Daily Quiz"
+                    android:textColor="#332D2D"
+                    android:textSize="30sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_kotak"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/bg_quiz"
+                                android:fontFamily="@font/roboto"
+                                android:paddingLeft="16dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="16dp"
+                                android:paddingBottom="8dp"
+                                android:text="Menurut kamu botol plastik
+                    termasuk jenis sampah apa?"
+                                android:textSize="12sp" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox1"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Tidak Tahu" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox22"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Daur Ulang" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Apa ya?" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_kotak"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/bg_quiz"
+                                android:fontFamily="@font/roboto"
+                                android:paddingLeft="16dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="16dp"
+                                android:paddingBottom="8dp"
+                                android:text="Menurut kamu botol plastik
+                    termasuk jenis sampah apa?"
+                                android:textSize="12sp" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Tidak Tahu" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox4"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Daur Ulang" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox5"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Apa ya?" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="4"
+                    android:background="#D3CDCD" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/amiri"
+                    android:text="FYI"
+                    android:textColor="#332D2D"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="360dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/background_kotak" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="-190dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="#fff"
+                            app:srcCompat="@drawable/ic_life_is_a_journey_6339">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="30dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Traveling bisa bikin kamu bahagia loh. Eits, jangan lupa untuk buang sampah di tempat ya!"
+                            android:textAlignment="gravity" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="360dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="-12dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/background_kotak" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="-190dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="#fff"
+                            app:srcCompat="@drawable/ic_life_is_a_journey_6339">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="30dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Traveling bisa bikin kamu bahagia loh. Eits, jangan lupa untuk buang sampah di tempat ya!"
+                            android:textAlignment="gravity" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

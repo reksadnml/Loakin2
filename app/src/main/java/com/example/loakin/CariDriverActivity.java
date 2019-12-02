@@ -1,20 +1,22 @@
 package com.example.loakin;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Button;
-import android.provider.MediaStore;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import java.io.File;
-import java.io.IOException;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CariDriver extends AppCompatActivity {
+import com.example.loakin.model.Maps2Activity;
+
+import java.io.IOException;
+
+public class CariDriverActivity extends AppCompatActivity {
 
     private ImageButton searchButton;
     private ImageView image;
@@ -30,14 +32,14 @@ public class CariDriver extends AppCompatActivity {
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CariDriver.this, MapsActivity.class);
+                Intent i = new Intent(CariDriverActivity.this, Maps2Activity.class);
                 startActivity(i);
             }
         });
         btnSearchDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CariDriver.this, OrderActivity.class);
+                Intent i = new Intent(CariDriverActivity.this, OrderActivity.class);
                 startActivity(i);
             }
         });
@@ -58,19 +60,19 @@ public class CariDriver extends AppCompatActivity {
                 startActivityForResult(intent, 2);
     }
 
-//    @Override
-//    void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if(requestCode == 2 && resultCode == RESULT_OK && data != null && data.data != null){
-//            Uri filePath = data.data;
-//            try {
-//                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
-//                image.setImageBitmap(bitmap);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//        }
-//    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 2 && resultCode == RESULT_OK && data != null && data.getData() != null){
+            Uri filePath = data.getData();
+            try {
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
+                image.setImageBitmap(bitmap);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
 
 }

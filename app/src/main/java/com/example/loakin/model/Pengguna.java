@@ -1,4 +1,4 @@
-package com.example.loakin;
+package com.example.loakin.model;
 
 public class Pengguna {
     public String nama;
