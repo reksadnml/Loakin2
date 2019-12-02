@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         daftarDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, DaftarDriver.class);
+                Intent i = new Intent(MainActivity.this, DaftarDriverActivity.class);
                 startActivity(i);
 
             }
