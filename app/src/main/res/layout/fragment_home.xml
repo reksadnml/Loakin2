@@ -29,10 +29,10 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/rectangle"
-                    android:layout_width="match_parent"
+                    android:layout_width="360dp"
                     android:layout_height="160dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/background_kotak">
 
                     <TextView
@@ -42,33 +42,26 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="8dp"
                         android:layout_weight="4"
-                        android:fontFamily="@font/biorhyme_bold"
+                        android:fontFamily="@font/amiri"
+                        android:textStyle="bold"
                         android:text="E-Wallet"
                         android:textColor="#332D2D"
-                        android:textSize="26sp"
+                        android:textSize="22sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
-
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
-                        android:layout_weight="2"
-                        app:layout_constraintRight_toLeftOf="@id/tvSaldo"
-                        app:layout_constraintTop_toTopOf="@id/tvSaldo"
-                        app:srcCompat="@drawable/ic_chevron_right" />
 
                     <TextView
                         android:id="@+id/tvSaldo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginEnd="20dp"
                         android:fontFamily="@font/biorhyme_light"
                         android:text="Rp. 12.000"
                         android:textColor="#332D2D"
                         android:textSize="18sp"
                         app:layout_constraintBaseline_toBaselineOf="@+id/dompet"
-                        app:layout_constraintRight_toRightOf="parent" />
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:textStyle="bold"/>
 
 
                     <LinearLayout
@@ -76,7 +69,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="15dp"
                         android:orientation="horizontal"
                         app:layout_constraintTop_toBottomOf="@id/divider">
 
@@ -126,8 +119,9 @@
                     <View
                         android:id="@+id/divider"
                         android:layout_width="match_parent"
-                        android:layout_height="2dp"
+                        android:layout_height="1dp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"
                         android:background="#D3CDCD"
@@ -141,16 +135,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/amiri"
                     android:text="Menu"
                     android:textColor="#332D2D"
-                    android:textSize="30sp" />
-
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="104dp"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
@@ -161,14 +155,13 @@
                         android:layout_marginStart="40dp"
                         android:background="@drawable/ellipse"
                         app:srcCompat="@drawable/ic_antar_barang" />
-
                     <TextView
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
                         android:fontFamily="@font/amiri"
                         android:gravity="center"
-                        android:text="Antar Barang" />
+                        android:text="Jemput Barang" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -178,7 +171,7 @@
 
                     <View
                         android:layout_width="0dp"
-                        android:layout_height="2dp"
+                        android:layout_height="4dp"
                         android:layout_gravity="center"
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
@@ -187,38 +180,37 @@
                 </LinearLayout>
 
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/amiri"
-                    android:text="Your Daily Quiz"
+                    android:text="Quiz Buat Kamu, Kiki"
                     android:textColor="#332D2D"
-                    android:textSize="30sp" />
+                    android:textSize="20dp" />
 
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="390dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:orientation="horizontal"
-                        android:paddingLeft="16dp"
-                        android:paddingRight="16dp"
                         android:weightSum="2">
 
                         <LinearLayout
+                            android:layout_height="220dp"
                             android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="47dp"
                             android:layout_weight="1"
                             android:background="@drawable/background_kotak"
                             android:orientation="vertical">
-
-
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
                                 android:background="@drawable/bg_quiz"
@@ -229,8 +221,8 @@
                                 android:paddingBottom="8dp"
                                 android:text="Menurut kamu botol plastik
                     termasuk jenis sampah apa?"
-                                android:textSize="12sp" />
-
+                                android:textAlignment="viewStart"
+                                android:textSize="15sp" />
                             <CheckBox
                                 android:id="@+id/checkBox1"
                                 android:layout_width="match_parent"
@@ -239,38 +231,49 @@
                                 android:layout_marginTop="0dp"
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/roboto"
-                                android:text="Tidak Tahu" />
-
-                            <CheckBox
-                                android:id="@+id/checkBox22"
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="13dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="@font/roboto"
-                                android:text="Daur Ulang" />
+                                android:text="Gatauu"
+                                android:textSize="12dp" />
 
                             <CheckBox
                                 android:id="@+id/checkBox2"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginStart="13dp"
+                                android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/roboto"
-                                android:text="Apa ya?" />
+                                android:text="Daur Ulang"
+                                android:textSize="12dp" />
 
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/background_kotak"
-                            android:orientation="vertical">
-
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Apa yah?"
+                                android:textSize="12dp" />
 
                             <TextView
                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="27dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Loakin sekarang!"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_height="220dp"
+                            android:layout_width="0dp"
+                            android:layout_marginStart="-25dp"
+                            android:layout_marginEnd="47dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_kotak"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
                                 android:background="@drawable/bg_quiz"
@@ -281,36 +284,51 @@
                                 android:paddingBottom="8dp"
                                 android:text="Menurut kamu botol plastik
                     termasuk jenis sampah apa?"
-                                android:textSize="12sp" />
-
+                                android:textAlignment="viewStart"
+                                android:textSize="15sp" />
                             <CheckBox
-                                android:id="@+id/checkBox3"
+                                android:id="@+id/checkBox4"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginStart="13dp"
                                 android:layout_marginTop="0dp"
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/roboto"
-                                android:text="Tidak Tahu" />
-
-                            <CheckBox
-                                android:id="@+id/checkBox4"
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="13dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="@font/roboto"
-                                android:text="Daur Ulang" />
+                                android:text="Gatauu"
+                                android:textSize="12dp" />
 
                             <CheckBox
                                 android:id="@+id/checkBox5"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginStart="13dp"
+                                android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/roboto"
-                                android:text="Apa ya?" />
+                                android:text="Daur Ulang"
+                                android:textSize="12dp" />
 
+                            <CheckBox
+                                android:id="@+id/checkBox6"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="13dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Apa yah?"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="27dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Loakin sekarang!"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
                         </LinearLayout>
+
+
 
 
                     </LinearLayout>
@@ -328,23 +346,22 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/amiri"
-                    android:text="FYI"
+                    android:text="Artikel "
                     android:textColor="#332D2D"
-                    android:textSize="30sp" />
+                    android:textSize="20dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="2">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="360dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="-12dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -377,7 +394,6 @@
                             android:text="Traveling bisa bikin kamu bahagia loh. Eits, jangan lupa untuk buang sampah di tempat ya!"
                             android:textAlignment="gravity" />
                     </LinearLayout>
-
                     <LinearLayout
                         android:layout_width="360dp"
                         android:layout_height="wrap_content"
