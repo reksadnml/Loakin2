@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class CariDriverActivity extends AppCompatActivity {
 
     private ImageButton searchButton;
     private ImageView image;
+    private EditText searchLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +29,13 @@ public class CariDriverActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cari_driver);
 
         searchButton = findViewById(R.id.search_btn);
+        searchLocation = findViewById(R.id.search_lokasi);
         image = findViewById(R.id.image);
         Button btnSearchDriver = findViewById(R.id.btnSearchDriver);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CariDriverActivity.this, Maps2Activity.class);
+                Intent i = new Intent(CariDriverActivity.this, MapsActivity.class);
                 startActivity(i);
             }
         });
@@ -50,6 +53,8 @@ public class CariDriverActivity extends AppCompatActivity {
             }
         });
 
+        if (!MapsActivity.lokasi.isEmpty()) searchLocation.setText(MapsActivity.lokasi);
+
         getSupportActionBar().hide();
     }
 
@@ -58,6 +63,12 @@ public class CariDriverActivity extends AppCompatActivity {
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(intent, 2);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!MapsActivity.lokasi.isEmpty()) searchLocation.setText(MapsActivity.lokasi);
     }
 
     @Override
